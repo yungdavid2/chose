@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    width: 300px; /* Ширина вашего контейнера */
+    padding: 20px;
+    text-align: center; /* Выравнивание содержимого по центру */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+    background-color: #f0f0f0; /* Цвет фона */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 10px 10px 1000px rgba(255, 255, 255, 0.1); /* Тень */
+}
+#personnumber, #check {
+    padding: 10px 20px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Изменяем курсор при наведении (для кнопки) */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+#personnumber {
+    margin-right: 10px; /* Отступ справа (между полем ввода и кнопкой) */
+}
+
+#check {
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+}
+
+#check:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+/* Ключевые кадры анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Применяем анимацию к элементу h3 */
+#display {
+    animation: fadeIn 1s ease; /* Применяем анимацию fadeIn с продолжительностью 1 секунда */
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3498db, #8e44ad); /* Градиент от верха до низа */
+    height: 100vh; /* Занимаем всю высоту видимой области окна браузера */
+    display: flex;
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    color: black; /* Цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+#content {
+    text-align: center;
+}
